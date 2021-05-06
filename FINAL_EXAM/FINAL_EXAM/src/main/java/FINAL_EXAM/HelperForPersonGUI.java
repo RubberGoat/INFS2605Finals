@@ -70,7 +70,7 @@ public class HelperForPersonGUI {
         try{
         // try set birth year; if bad birth year is set, prevent further progress
             String yearString = txtBdayYear.getText();
-            if (!yearString.trim().isEmpty()) {
+            if (!yearString.trim().isEmpty() ) {
                 successfulSoFar = HelperForData.trySetPersonBdayYear(person, yearString);
 
                 System.out.println("Setyear " + successfulSoFar);
